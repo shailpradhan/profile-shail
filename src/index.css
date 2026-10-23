@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap');
+
+:root {
+  font-family: 'EB Garamond', Georgia, serif;
+  color: #edf1f2;
+  background: #0a0d11;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --bg: #0a0d11;
+  --surface: #11171c;
+  --surface-raised: #182127;
+  --ink: #edf1f2;
+  --muted: #b9bdc0;
+  --accent: #9dc3cb;
+  --accent-ink: #0a1114;
+  --margin: clamp(1.125rem, 3.1vw, 3.25rem);
+  --body: 1.1875rem;
+  --small: 0.9375rem;
+  --lead: clamp(1.5rem, 1.25rem + 0.8vw, 2rem);
+  --heading: clamp(2.25rem, 1.7rem + 3.2vw, 4.75rem);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 1.5rem;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-size: var(--body);
+  line-height: 1.52;
+}
+
+body,
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button,
+a {
+  color: inherit;
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+p,
+figure {
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+::selection {
+  color: var(--accent-ink);
+  background: var(--accent);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 5px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
+
+.skip-link {
+  position: fixed;
+  z-index: 10;
+  top: 0.75rem;
+  left: var(--margin);
+  padding: 0.65rem 1rem;
+  transform: translateY(-160%);
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .hero-breeze,
+  .hero-waves,
+  .wave-letter {
+    animation: none !important;
+  }
+
+  .wave-letter {
+    transform: none;
+  }
+}
