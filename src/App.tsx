@@ -153,7 +153,6 @@ function App() {
           <div className="about-copy" data-reveal>
             <p>{resumeContent.profile.summary[0]}</p>
             <p>{resumeContent.profile.summary[1]}</p>
-            <p className="quiet-note">{resumeContent.profile.summaryReviewNote}</p>
           </div>
 
           <div className="about-image" data-reveal>
@@ -169,7 +168,7 @@ function App() {
           <div className="section-heading" data-reveal>
             <h2 id="skills-title">Technical skills</h2>
             <p className="quiet-note">
-              Technologies and areas reflected in my work; no proficiency levels are implied.
+              Technologies and areas reflected in my work
             </p>
           </div>
           <div className="skill-list">
@@ -195,9 +194,6 @@ function App() {
             <h2 id="experience-title">Professional experience</h2>
           </div>
           <div className="experience-list">
-            <p className="quiet-note experience-verification" data-reveal>
-              {resumeContent.experience.verificationNote}
-            </p>
             {resumeContent.experience.roles.map((role) => (
               <article className="experience-item" data-reveal key={role.title}>
                 <div className="experience-role">
@@ -282,10 +278,6 @@ function App() {
         <section aria-labelledby="contact-title" className="contact section" id="contact">
           <div className="contact-copy" data-reveal>
             <h2 id="contact-title">Get in touch</h2>
-            <p>
-              Reach out through either profile, or add an email address when you
-              are ready.
-            </p>
           </div>
           <div className="contact-links" data-reveal>
             {resumeContent.profile.profiles.map((profile) => (
@@ -341,15 +333,15 @@ function App() {
       </main>
 
       <footer className="site-footer">
-        <a
+        {/* <a
           aria-label={`Back to top, ${resumeContent.profile.name}`}
           className="footer-name"
           href="#top"
         >
           {resumeContent.profile.name}
-        </a>
+        </a> */}
         <div className="footer-bottom">
-          <p>{resumeContent.profile.name}</p>
+          {/* <p>{resumeContent.profile.name}</p> */}
           <a href="#top">Back to top</a>
         </div>
       </footer>

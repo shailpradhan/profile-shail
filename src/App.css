@@ -4,17 +4,19 @@
 }
 
 .site-header {
-  position: absolute;
+  position: sticky;
+  top: 0;
   z-index: 5;
-  inset: 0 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 5.5rem;
+  min-height: 3rem;
   padding-inline: var(--margin);
-  position: sticky;
-  top: 0;
-  
+
+  background: rgb(255 255 255 / 0.0);        /* translucent */
+  -webkit-backdrop-filter: blur(8px);       /* Safari */
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgb(255 255 255 / 0.1);
 }
 
 .header-actions {
@@ -530,14 +532,14 @@
 .contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: end;
+  align-items: start;
   gap: 2rem;
   background: var(--surface);
   color: var(--ink);
 }
 
 .contact-copy {
-  display: grid;
+  display: 'flex';
   max-width: 32rem;
   gap: 1.5rem;
 }
@@ -624,9 +626,9 @@
 
 .footer-bottom {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 1rem;
-  padding-top: 2.5rem;
+  padding-top: 0.5rem;
   color: var(--muted);
 }
 

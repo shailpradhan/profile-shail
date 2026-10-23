@@ -10,9 +10,7 @@ export const resumeContent = {
       'I enjoy building software that is simple, maintainable, and useful. My interests include software engineering, AI-powered applications, developer tooling, and reliable systems.',
       'I work on projects spanning AI agent evaluation, browser-based developer tools, and machine learning applications.',
     ],
-    summaryReviewNote:
-      'Based on publicly available profile information and project descriptions. Refine this to reflect current responsibilities and goals.',
-    emailPlaceholder: 'Email address not provided',
+    emailPlaceholder: 'shail.pradhan@icloud.com',
     profiles: [
       {
         label: 'GitHub',
