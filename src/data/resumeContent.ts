@@ -7,8 +7,8 @@ export const resumeContent = {
     tagline:
       'Building thoughtful software, intelligent systems, and reliable digital experiences.',
     summary: [
-      'I enjoy building software that is simple, maintainable, and useful. My interests include software engineering, AI-powered applications, developer tooling, and reliable systems.',
-      'I work on projects spanning AI agent evaluation, browser-based developer tools, and machine learning applications.',
+      'I like building software that is simple, maintainable, and useful. My work and interests span software engineering, AI-powered applications, developer tooling, and machine learning.',
+      'I have explored projects in AI-assisted complaint resolution, field operations monitoring, and Nepali sign language gesture recognition.',
     ],
     emailPlaceholder: 'shail.pradhan@icloud.com',
     profiles: [
@@ -68,8 +68,29 @@ export const resumeContent = {
   },
   projects: [
     {
+      title: 'AI-Powered Complaint Resolution System Prototype',
+      category: 'AI / Public Services',
+      period: 'May 2025',
+      repository: undefined,
+      description:
+        'A prototype for automating public complaint resolution and routing cases to the appropriate departments using context engineering, retrieval-augmented generation (RAG), and generative AI.',
+      technologies: ['Context engineering', 'RAG', 'Generative AI'],
+      repositoryNote: 'Project description from LinkedIn; a public code repository was not listed.',
+    },
+    {
+      title: 'Digitised Monitoring System for Field Raids & Seizures',
+      category: 'Hackathon / Field Operations',
+      period: 'May 2025',
+      repository: undefined,
+      description:
+        'A hackathon project for the Sikkim Summit 2025 focused on digitising monitoring of field raids and seizures.',
+      technologies: [],
+      repositoryNote: 'Project details from LinkedIn; implementation and technologies were not specified.',
+    },
+    {
       title: 'Agent Evaluation & Observability Harness',
       category: 'AI Engineering / Developer Tools',
+      period: undefined,
       description:
         'An evaluation and observability framework for systematically testing AI agents and detecting behavioral regressions across changes to models, prompts, and tools.',
       repository:
@@ -88,6 +109,7 @@ export const resumeContent = {
     {
       title: 'AI Coding Mentor Extension',
       category: 'AI / Browser Extension',
+      period: undefined,
       description:
         'A browser extension project exploring AI-powered coding assistance with Chrome’s built-in AI capabilities.',
       repository: 'https://github.com/shailpradhan/Coding-Mentor-Extension',
@@ -102,15 +124,16 @@ export const resumeContent = {
         'The repository documents extension build and loading steps and setup requirements for Chrome’s experimental built-in AI. Feature-level claims require an implementation review.',
     },
     {
-      title: 'Hand Gesture Recognition using MediaPipe',
+      title: 'Nepali Sign Language Gesture Recognition',
       category: 'Computer Vision / Machine Learning',
+      period: undefined,
       description:
-        'A Python sample that estimates hand pose with MediaPipe and recognizes hand signs and finger gestures from detected keypoints using a simple MLP.',
+        'An academic project using transfer learning with ResNet-50 and VGG16, alongside a custom DNN using MediaPipe hand landmarks, to recognize Nepali Sign Language gestures.',
       repository:
         'https://github.com/shailpradhan/hand-gesture-recognition-Mediapipe',
-      technologies: ['Python', 'Jupyter Notebook', 'MediaPipe', 'MLP'],
+      technologies: ['Python', 'TensorFlow', 'Keras', 'OpenCV', 'MediaPipe', 'ResNet-50', 'VGG16'],
       repositoryNote:
-        'The dataset, supported gesture classes, model details beyond the README, and measured accuracy have not been verified.',
+        'LinkedIn reports 99% accuracy with ResNet-50, 91% with VGG16, and 90% with the custom model. These figures are profile-reported and have not been independently validated against the linked repository.',
     },
   ],
   education: {
@@ -121,7 +144,16 @@ export const resumeContent = {
     grade: 'CGPA 8.7',
   },
   certifications: {
-    items: [] as string[],
+    items: [
+      'Cyber Risk & Regulatory Certificate — PwC Acceleration Center India (July 2025)',
+      'The Complete Full-Stack Web Development Bootcamp — Udemy (June 2025)',
+      'Developing AI Applications using Python and Flask — IBM (February 2025)',
+      'HackerRank Skill Certificate: Problem Solving (Basic) (December 2024)',
+      'HackerRank Skill Certificate: Python (Basic) (December 2024)',
+      'Programming in Python — Meta (November 2024)',
+      'AI ML for Geodata Analysis — Indian Space Research Organisation (ISRO) (August 2024)',
+      'Introduction to TensorFlow for Artificial Intelligence, Machine Learning and Deep Learning — DeepLearning.AI (May 2024)',
+    ],
     emptyMessage: 'No certifications have been provided yet.',
   },
   resumePdf: {

@@ -233,17 +233,21 @@ function App() {
             {resumeContent.projects.map((project) => (
               <article className="project-item" data-reveal key={project.title}>
                 <div className="project-heading">
-                  <p className="project-category">{project.category}</p>
+                  <p className="project-category">
+                    {project.category}{project.period ? ` · ${project.period}` : ''}
+                  </p>
                   <h3>{project.title}</h3>
-                  <a
-                    aria-label={`View ${project.title} on GitHub (opens in a new tab)`}
-                    className="project-link"
-                    href={project.repository}
-                    rel="noreferrer"
-                    target="_blank"
-                  >
-                    View repository
-                  </a>
+                  {project.repository && (
+                    <a
+                      aria-label={`View ${project.title} on GitHub (opens in a new tab)`}
+                      className="project-link"
+                      href={project.repository}
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      View repository
+                    </a>
+                  )}
                 </div>
                 <div className="project-detail">
                   <p>{project.description}</p>
