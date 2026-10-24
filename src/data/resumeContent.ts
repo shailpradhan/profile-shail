@@ -8,7 +8,7 @@ export const resumeContent = {
       'Building thoughtful software, intelligent systems, and reliable digital experiences.',
     summary: [
       'I like building software that is simple, maintainable, and useful. My work and interests span software engineering, AI-powered applications, developer tooling, and machine learning.',
-      'I have explored projects in AI-assisted complaint resolution, field operations monitoring, and Nepali sign language gesture recognition.',
+      'I build and explore software across AI applications, developer tools, and machine learning.',
     ],
     emailPlaceholder: 'shail.pradhan@icloud.com',
     profiles: [
@@ -68,26 +68,6 @@ export const resumeContent = {
   },
   projects: [
     {
-      title: 'AI-Powered Complaint Resolution System Prototype',
-      category: 'AI / Public Services',
-      period: 'May 2025',
-      repository: undefined,
-      description:
-        'A prototype for automating public complaint resolution and routing cases to the appropriate departments using context engineering, retrieval-augmented generation (RAG), and generative AI.',
-      technologies: ['Context engineering', 'RAG', 'Generative AI'],
-      repositoryNote: 'Project description from LinkedIn; a public code repository was not listed.',
-    },
-    {
-      title: 'Digitised Monitoring System for Field Raids & Seizures',
-      category: 'Hackathon / Field Operations',
-      period: 'May 2025',
-      repository: undefined,
-      description:
-        'A hackathon project for the Sikkim Summit 2025 focused on digitising monitoring of field raids and seizures.',
-      technologies: [],
-      repositoryNote: 'Project details from LinkedIn; implementation and technologies were not specified.',
-    },
-    {
       title: 'Agent Evaluation & Observability Harness',
       category: 'AI Engineering / Developer Tools',
       period: undefined,
@@ -145,14 +125,14 @@ export const resumeContent = {
   },
   certifications: {
     items: [
-      'Cyber Risk & Regulatory Certificate — PwC Acceleration Center India (July 2025)',
-      'The Complete Full-Stack Web Development Bootcamp — Udemy (June 2025)',
-      'Developing AI Applications using Python and Flask — IBM (February 2025)',
+      'Cyber Risk & Regulatory Certificate, PwC Acceleration Center India (July 2025)',
+      'The Complete Full-Stack Web Development Bootcamp, Udemy (June 2025)',
+      'Developing AI Applications using Python and Flask, IBM (February 2025)',
       'HackerRank Skill Certificate: Problem Solving (Basic) (December 2024)',
       'HackerRank Skill Certificate: Python (Basic) (December 2024)',
-      'Programming in Python — Meta (November 2024)',
-      'AI ML for Geodata Analysis — Indian Space Research Organisation (ISRO) (August 2024)',
-      'Introduction to TensorFlow for Artificial Intelligence, Machine Learning and Deep Learning — DeepLearning.AI (May 2024)',
+      'Programming in Python, Meta (November 2024)',
+      'AI ML for Geodata Analysis, Indian Space Research Organisation (ISRO) (August 2024)',
+      'Introduction to TensorFlow for Artificial Intelligence, Machine Learning and Deep Learning, DeepLearning.AI (May 2024)',
     ],
     emptyMessage: 'No certifications have been provided yet.',
   },

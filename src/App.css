@@ -13,10 +13,7 @@
   min-height: 3rem;
   padding-inline: var(--margin);
 
-  background: rgb(255 255 255 / 0.0);        /* translucent */
-  -webkit-backdrop-filter: blur(8px);       /* Safari */
-  backdrop-filter: blur(8px);
-  border-bottom: 1px solid rgb(255 255 255 / 0.1);
+  background: var(--bg);
 }
 
 .header-actions {
@@ -99,7 +96,7 @@
   align-items: center;
   padding: 6rem var(--margin) 3rem;
   overflow: hidden;
-  background: #0a0d11;
+  background: var(--bg);
 }
 
 .hero-atmosphere {
@@ -121,18 +118,18 @@
 .hero-breeze {
   top: 20%;
   height: 31%;
-  stroke: #9dc3cb;
+  stroke: var(--accent);
   stroke-width: 1.25;
-  opacity: 0.28;
+  opacity: 0.2;
   animation: wind-drift 24s linear infinite;
 }
 
 .hero-waves {
   bottom: 2%;
   height: 31%;
-  stroke: #9dc3cb;
+  stroke: var(--accent);
   stroke-width: 2;
-  opacity: 0.62;
+  opacity: 0.35;
   animation: wave-drift 16s linear infinite;
 }
 
@@ -485,7 +482,7 @@
   grid-template-columns: 1.1fr 0.9fr;
   align-items: start;
   gap: clamp(2rem, 7vw, 9rem);
-  background: #11171c;
+  background: var(--surface);
 }
 
 .education-copy {
@@ -601,8 +598,14 @@
   justify-self: start;
   min-height: 3.2rem;
   padding: 0.65rem 1.15rem;
-  background: #1a2228;
-  color: #9da3a7;
+  background: var(--accent);
+  color: var(--accent-ink);
+  cursor: pointer;
+}
+
+.resume-button:disabled {
+  background: var(--surface-raised);
+  color: var(--muted);
   cursor: not-allowed;
 }
 
