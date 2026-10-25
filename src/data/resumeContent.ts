@@ -137,7 +137,7 @@ export const resumeContent = {
     emptyMessage: 'No certifications have been provided yet.',
   },
   resumePdf: {
-    available: false,
+    available: true,
     path: '/resume.pdf',
   },
 }

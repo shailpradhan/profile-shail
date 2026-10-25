@@ -556,6 +556,9 @@
 }
 
 .contact-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
   color: var(--ink);
   transition:
     transform 220ms cubic-bezier(0.16, 1, 0.3, 1),
@@ -564,6 +567,13 @@
 
 .contact-links a:hover {
   transform: translateY(-3px);
+}
+
+.contact-social-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex: none;
+  fill: currentColor;
 }
 
 .contact-location {
@@ -581,15 +591,6 @@
 .resume-copy {
   display: grid;
   gap: 1rem;
-}
-
-.resume-mark {
-  justify-self: end;
-  color: var(--muted);
-  font-family: 'Bebas Neue', Impact, sans-serif;
-  font-size: clamp(6.2rem, 20.2vw, 24rem);
-  letter-spacing: -0.045em;
-  line-height: 0.8;
 }
 
 .resume-copy p {
@@ -861,10 +862,6 @@
   .resume {
     grid-template-columns: 1fr;
     align-items: start;
-  }
-
-  .resume-mark {
-    display: none;
   }
 
   .resume-button {
