@@ -576,6 +576,10 @@
   fill: currentColor;
 }
 
+.linkedin-icon {
+  color: #0a66c2;
+}
+
 .contact-location {
   flex-basis: 100%;
   color: var(--muted);
